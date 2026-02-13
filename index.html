@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klirfff mylove</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Stage 1: Closed Envelope -->
+    <div id="envelope-container" class="stage active">
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body"></div>
+            <div class="heart">❤️</div>
+        </div>
+        <p class="instruction">Click the envelope to open</p>
+    </div>
+
+    <!-- Stage 2: Number Padlock Game -->
+    <div id="padlock-container" class="stage">
+        <div class="padlock-box">
+            <h2>Unlock the Secret 🔒</h2>
+				 <p class="hint">Enter the special combination</p>
+            <div class="padlock-inputs">
+                <input type="number" class="padlock-digit" id="digit1" maxlength="2" placeholder="00">
+                <span class="separator">-</span>
+                <input type="number" class="padlock-digit" id="digit2" maxlength="2" placeholder="00">
+                <span class="separator">-</span>
+                <input type="number" class="padlock-digit" id="digit3" maxlength="2" placeholder="00">
+            </div>
+            <button id="unlock-btn" class="unlock-button">Unlock</button>
+            <p id="error-msg" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Stage 3: Paper Inside Envelope -->
+    <div id="paper-container" class="stage">
+        <div class="opened-envelope">
+            <div class="envelope-open-flap"></div>
+            <div class="envelope-open-body">
+                <div class="paper" id="paper">
+                    <div class="paper-fold"></div>
+                    <p class="paper-text">Click to read</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage 4: Content Display -->
+    <div id="content-container" class="stage">
+        <div class="content-box">
+            <h1 class="love-title">For My Lovey</h1>
+            
+            <!-- Photo Gallery -->
+<div class="photo-gallery">
+    <div class="photo-book" onclick="this.classList.toggle('flipped')">
+        <div class="photo-container">
+            <div class="photo-front">
+                <img src="photo1.jpeg" alt="Our Memory 1">
+            </div>
+            <div class="photo-back">
+                <p>First picture man ata ni nato - 12-06-2025</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="photo-book" onclick="this.classList.toggle('flipped')">
+        <div class="photo-container">
+            <div class="photo-front">
+                <img src="photo2.jpeg" alt="Our Memory 2">
+            </div>
+            <div class="photo-back">
+                <p>Picture bago maglangi kay dugay magkita balik    - 12-17-2025</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="photo-book" onclick="this.classList.toggle('flipped')">
+        <div class="photo-container">
+            <div class="photo-front">
+                <img src="photo3.jpeg" alt="Our Memory 3">
+            </div>
+            <div class="photo-back">
+                <p>Unforgettable day kay way tingganay pag buntag HAHAHAHA  - 12-12-2025</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+           <!-- Music Player -->
+<div class="music-player">
+    <h3>Bruno Major - Nothing </h3>
+    <div class="custom-player">
+        <audio id="audio-player">
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="player-controls">
+            <button id="play-btn" class="play-button">
+                <span class="play-icon">▶</span>
+                <span class="pause-icon" style="display: none;">❚❚</span>
+            </button>
+            
+            <div class="progress-container">
+                <div class="time-display" id="current-time">0:00</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="time-display" id="duration-time">0:00</div>
+            </div>
+            
+            <div class="volume-control">
+                <span class="volume-icon">🔊</span>
+                <input type="range" id="volume-slider" min="0" max="100" value="70" class="volume-slider">
+            </div>
+        </div>
+    </div>
+</div>
+
+            !-- Love Letter -->
+<div class="letter-section">
+    <div class="sealed-letter" id="sealed-letter">
+        <div class="letter-cover">
+            <div class="ribbon-vertical"></div>
+            <div class="ribbon-horizontal"></div>
+            <div class="ribbon-bow" id="ribbon-bow">
+                <div class="bow-left"></div>
+                <div class="bow-right"></div>
+                <div class="bow-center"></div>
+            </div>
+            <p class="ribbon-hint">Click the ribbon to open ✨</p>
+        </div>
+    </div>
+    
+    <div class="opened-letter" id="opened-letter" style="display: none;">
+        <h2>My Letter to You</h2>
+        <div class="letter-content">
+            <p>My Dearest Claire,</p>
+            
+            <p>Every moment with you is a treasure that I hold close to my heart. 
+                    From the first time we met bisag sige ra tag bikil ato kay tuyuon mansad 
+                    nako ug bikil HAHAHAHAH atleast manlang magkasturya</p>
+            
+            <p>Looking at these pictures reminds me of all the beautiful memories 
+                    we created together. Which tells a story of our journey na  
+                    wa jud ta magdahom nga maabot diay ta aning duha.</p>
+            
+            <p>Kanibitaw na song di jud ni nako makalimtan ay kay sa first date nato, 
+                    Karemember ko before the day sa atong date which is dili jud date kay naa man tay tuyo.
+                    sige kog paminaw ato na song kay na lss ko tas timing kaayo kay maoy giplay sa DNC.</p>
+            
+            <p>Thank you for being you, for your kindness, your smile, your patience,
+        			thankyou sa mga times na bisag wala kay gana, maafeel gihapon nimo saako na important ko.
+					Every moment we have together I will always cherish it 
+                    and I will always make you feel as special as you make me feel.</p>
+            
+            <p>I love you so much mylove, you da best! very very best jud! I hope walay mapul an
+                    natong duha.</p>
+            
+            <p class="signature">Imong Lablab,<br>
+            Rheygie</p>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
